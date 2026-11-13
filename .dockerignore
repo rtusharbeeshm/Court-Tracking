@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__
+.pytest_cache
+*.pyc
+*.sqlite3
+*.db
+data/
+tests/
+*.bat
+*.txt
+*.md
+*.zip
+*.png
+!static/*.png

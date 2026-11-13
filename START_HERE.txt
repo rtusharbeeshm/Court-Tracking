@@ -1,0 +1,17 @@
+MY CASES — INDEPENDENT WEBSITE (CLOUD)
+
+This version runs on a paid online server, not on your laptop.
+Your phone can access it from court using mobile data, even when your laptop is off.
+
+1. Create a NEW PRIVATE GitHub repository.
+2. Upload the CONTENTS of this CourtTrack_Cloud_Website folder (not the folder itself).
+   IMPORTANT: render.yaml must be visible directly on the GitHub main branch.
+3. On render.com, select New > Blueprint, connect the repository, Blueprint Path: render.yaml.
+4. When Render prompts for COURTTRACK_PASSWORD, create a strong UNIQUE password (12+ chars).
+   The session secret is generated for you. Review the paid compute/disk charges.
+5. Deploy; when Live, open the HTTPS site on your phone, sign in, and use /mobile.
+
+After deployment you do NOT need the PC to stay on.
+Use the official High Court display board to verify hearing status.
+
+Read README.md for details, limits and troubleshooting.

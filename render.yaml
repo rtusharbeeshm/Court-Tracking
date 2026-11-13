@@ -1,0 +1,26 @@
+# Place this file in the ROOT of a new GitHub repository.
+# This is a paid, always-on configuration; no free-tier sleeping or ephemeral SQLite data.
+services:
+  - type: web
+    name: karnataka-courttrack-cloud
+    runtime: docker
+    plan: 1c-2g
+    numInstances: 1
+    healthCheckPath: /health
+    disk:
+      name: case-records
+      mountPath: /app/data
+      sizeGB: 5
+    envVars:
+      - key: CLOUD_MODE
+        value: '1'
+      - key: COURTTRACK_PASSWORD
+        sync: false
+      - key: COURTTRACK_SESSION_SECRET
+        generateValue: true
+      - key: TRACKER_DATA_DIR
+        value: /app/data
+      - key: POLL_SECONDS
+        value: '35'
+      - key: PASSOVER_CHECK_SECONDS
+        value: '120'
